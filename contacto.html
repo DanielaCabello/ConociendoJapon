@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Japón</title>
+</head>
+<body>
+    <header>
+        <div class="titulo">
+            <h1>Conociendo <span>Japón</span></h1>
+            <nav class="navegacion">
+                <a href="index.html">Inicio</a>
+                <a href="lugares.html">Lugares Turísticos</a>
+                <a href="sobrenosotros.html">Sobre Nosotros</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <h1 class="centrar">Contáctanos</h1>
+        <form>
+            <fieldset>
+                <legend>Información Personal</legend>
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nom" placeholder="Nombre Completo" required>
+                <br><br>
+
+                <label for="email">E-mail: </label>
+                <input type="email" id="e-mail" placeholder="Correo Electrónico">
+                <br><br>
+
+                <label for="telefono">Teléfono: </label>
+                <input type="tel" id="tel" placeholder="Tu teléfono">
+                <br><br>
+
+                <label for="mensaje">Mensaje: </label>
+                <textarea id="mensaje" placeholder="Quiero saber más sobre Kioto, encontre un error en su artículo..."></textarea>
+            </fieldset><!--Info Personal-->
+            <fieldset class="parte-form">
+                <legend>Contacto</legend>
+                <p>Como desea ser contactado:</p>
+                <div class="forma-contacto">
+                    <label for="tel">Teléfono</label>
+                    <input type="radio" name="contacto" id="tel">
+
+                    <label for="correo">E-mail</label>
+                    <input type="radio" name="contacto" id="e-mail">
+                </div>
+
+                <p>Si eligió teléfono, elija la fecha y hora en la que quiere ser contactado: </p>
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha">
+
+                <label for="hora">Hora: </label>
+                <input type="time" id="hora" min="9:00" max="18:00">
+            </fieldset><!--Contacto-->
+            <center>
+                <button type="submit" class="btn-form">Enviar</button>
+                <button type="reset" class="btn-form">Reiniciar</button>
+            </center>
+        </form>
+    </main>
+</body>
+</html>
